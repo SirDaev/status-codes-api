@@ -3,7 +3,7 @@ exports.handler = async function (event, context) {
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
     return {
-      statusCode: 410,
+      statusCode: parseInt(code),
       headers: {
         /* Required for CORS support to work */
         'Access-Control-Allow-Origin': '*',
@@ -13,8 +13,7 @@ exports.handler = async function (event, context) {
       body: JSON.stringify(
         [
           {
-            message: "You got the code!",
-            code: code
+            message: "You got the code!"
           }
         ]
       ),
