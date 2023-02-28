@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/200"
-  to = "/.netlify/functions/200"
+  from = "/*"
+  to = "/.netlify/functions/:splat"
   status = 200
   force = true
