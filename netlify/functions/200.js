@@ -8,11 +8,7 @@ exports.handler = async function (event, context) {
       'Access-Control-Allow-Credentials': true
     },
     body: JSON.stringify(
-      [
-        {
-          message: "You got the code!"
-        }
-      ]
+      context
     ),
   };
 }
