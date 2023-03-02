@@ -3,8 +3,7 @@ exports.handler = async function (event, context) {
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
     return {
-      statusCode: 200,
-      statusDescription: "200 OK",
+      statusCode: parseInt(code),
       headers: {
         /* Required for CORS support to work */
         'Access-Control-Allow-Origin': '*',
