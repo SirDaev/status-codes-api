@@ -3,7 +3,7 @@ exports.handler = async function (event, context) {
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
     return {
-      statusCode: parseInt(code),
+      statusCode: parseInt(code) + " This is my custom reason phrase",
       statusDescription: code + " This is my custom reason phrase",
       headers: {
         /* Required for CORS support to work */
