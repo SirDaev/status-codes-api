@@ -4,7 +4,7 @@ exports.handler = async function (event, context) {
 
     return {
       statusCode: parseInt(code),
-      statusMessage: "The status message (response phrase) goes heree.",
+      statusDescription: code + " This is my custom reason phrase",
       headers: {
         /* Required for CORS support to work */
         'Access-Control-Allow-Origin': '*',
