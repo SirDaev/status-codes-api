@@ -1,0 +1,24 @@
+{
+  "name": "status-codes-api",
+  "version": "1.0.0",
+  "description": "API to mock status code responses",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon watch src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://SirDaev@github.com/SirDaev/status-codes-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirDaev/status-codes-api/issues"
+  },
+  "homepage": "https://github.com/SirDaev/status-codes-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21",
+    "pug": "^3.0.2"
+  }
+}
