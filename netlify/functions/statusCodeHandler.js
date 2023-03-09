@@ -1,5 +1,9 @@
 exports.handler = async function (event, context, response) {
 
+  console.log(event);
+  console.log(context);
+  console.log(response);
+
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
     const codeInt = parseInt(code);
