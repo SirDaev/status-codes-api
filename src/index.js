@@ -6,8 +6,13 @@ const compiledFunction = pug.compileFile('src/index.pug');
 
 const html = compiledFunction({data: data})
 
-var stream = fs.createWriteStream("index.html");
+const buildDir = "./build";
 
-stream.once('open', function(fd) {
+if (!fs.existsSync(buildDir)){
+  fs.mkdirSync(buildDir);
+}
+var stream = fs.createWriteStream(buildDir+"/index.html");
+
+stream.once('open', function() {
   stream.end(html);
 });
