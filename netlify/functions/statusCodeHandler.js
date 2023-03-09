@@ -1,4 +1,6 @@
-exports.handler = async function (event, context) {
+exports.handler = async function (event, context, response) {
+
+  console.log(response)
 
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
