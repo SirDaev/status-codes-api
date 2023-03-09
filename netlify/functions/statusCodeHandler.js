@@ -1,17 +1,6 @@
-exports.handler = async function (event, context, response) {
-
-  console.log(event);
-  console.log(context);
-  console.log(response);
+exports.handler = async function (event, context) {
 
     const code = event.path.match(/([^\/]*)\/*$/)[1];
-
-    const codeInt = parseInt(code);
-
-    if(codeInt === 100) {
-      console.log('100 writeContinue')
-      response.writeContinue()
-    }
 
     return {
       statusCode: parseInt(code),
