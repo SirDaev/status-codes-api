@@ -1,6 +1,7 @@
 exports.handler = async function (event, context, response) {
 
   console.log(response)
+  console.log("dave was here")
 
     const code = event.path.match(/([^\/]*)\/*$/)[1];
 
